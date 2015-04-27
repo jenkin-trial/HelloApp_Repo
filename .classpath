@@ -5,6 +5,7 @@
 	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
 	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
 	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="lib" path="C:/Program Files (x86)/Experitest/SeeTest/clients/java/imageClient.jar"/>
 	<classpathentry kind="lib" path="C:/Program Files (x86)/Experitest/SeeTest/clients/java/junit-4.4.jar"/>
 	<classpathentry kind="lib" path="C:/Program Files (x86)/Experitest/SeeTest/clients/java/mobile-webdriver.jar"/>
