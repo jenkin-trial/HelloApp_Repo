@@ -1,16 +1,25 @@
 package com.example.hello_app;
 
+
+
 import android.app.Activity;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 
-public class MainActivity extends Activity {
-
+public class MainActivity extends Activity implements OnClickListener {
+	Button b;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		b = (Button) findViewById(R.id.openweb);
+		b.setOnClickListener(this);
 	}
 
 	@Override
@@ -31,4 +40,15 @@ public class MainActivity extends Activity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
+
+	@Override
+	public void onClick(View v) {
+		// TODO Auto-generated method stub
+		 goToUrl ( "http://personal.aib.ie/");
+	}
+	 private void goToUrl (String url) {
+	        Uri uriUrl = Uri.parse(url);
+	        Intent launchBrowser = new Intent(Intent.ACTION_VIEW, uriUrl);
+	        startActivity(launchBrowser);
+	    }
 }
